@@ -7,7 +7,7 @@
 <h3 align="center">Modern Job Queue Monitoring Dashboard</h3>
 
 <p align="center">
-  A high-performance dashboard for monitoring and managing BullMQ job queues. Built with React, TypeScript through parallel Redis operations.
+  A high-performance dashboard for monitoring and managing BullMQ job queues. Built with React, TypeScript.
 </p>
 
 <p align="center">
