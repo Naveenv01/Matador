@@ -7,7 +7,7 @@
 <h3 align="center">Modern Job Queue Monitoring Dashboard</h3>
 
 <p align="center">
-  A high-performance dashboard for monitoring and managing BullMQ job queues. Built with React, TypeScript, and optimized for speed with <strong>99% faster API response times</strong> through parallel Redis operations.
+  A high-performance dashboard for monitoring and managing BullMQ job queues. Built with React, TypeScript through parallel Redis operations.
 </p>
 
 <p align="center">
@@ -19,7 +19,6 @@
 - **📊 Real-time Queue Monitoring** - View all your job queues at a glance
 - **🎯 Job Filtering** - Filter jobs by status (Completed, Failed, Active, Waiting, Delayed)
 - **⏰ Next Scheduled Job** - See upcoming scheduled jobs with live countdown
-- **⚡ Blazing Fast** - Optimized with parallel Redis calls (~238ms API response time)
 - **🎨 Modern UI** - Clean, responsive interface built with shadcn/ui
 - **🔍 Search & Filter** - Quickly find jobs by queue, status, or job ID
 - **📈 Statistics** - View aggregated stats across all queues
@@ -211,25 +210,6 @@ curl "http://localhost:3000/api/jobs?status=failed"
 curl "http://localhost:3000/api/jobs?queue=my-queue&status=active"
 ```
 
-## 🎯 Performance Optimizations
-
-Matador is built for speed:
-
-### Before Optimization
-- `/api/jobs`: ~25,000ms (25 seconds!)
-- `/api/queues`: ~10,000ms
-- `/api/stats`: ~27,000ms
-
-### After Optimization
-- `/api/jobs`: **~238ms** ⚡ (99% improvement)
-- `/api/queues`: **~115ms** ⚡ (98% improvement)
-- `/api/stats`: **~238ms** ⚡ (99% improvement)
-
-**How we achieved this:**
-1. **Parallel Redis Calls** - Fetch jobs from all queues and statuses concurrently
-2. **Smart Caching** - 5-second cache for queue discovery
-3. **Reduced Payload** - Limit jobs to 30 per status (configurable)
-4. **Service Modularization** - Optimized code organization
 
 ## 🛠️ Development
 
